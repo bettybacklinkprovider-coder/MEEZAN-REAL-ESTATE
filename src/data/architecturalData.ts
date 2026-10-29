@@ -1,3 +1,19 @@
+import millatRoadPlazaImg from '../assets/images/faisalabad_millat_road_commercial_plaza_1793278028817.jpg';
+import millatTownHouseImg from '../assets/images/faisalabad_millat_town_1kanal_house_1793278029540.jpg';
+import propertyAdvisorOfficeImg from '../assets/images/faisalabad_property_advisor_office_1793278031427.jpg';
+import clockTowerAerialImg from '../assets/images/faisalabad_clock_tower_aerial_1793278027054.jpg';
+import uploadedSpecimen1Img from '../assets/images/uploaded_specimen_1.jpg';
+import uploadedSpecimen2Img from '../assets/images/uploaded_specimen_2.jpg';
+
+export const ARCHITECTURAL_IMAGES = {
+  millatRoadPlaza: millatRoadPlazaImg,
+  millatTownHouse: millatTownHouseImg,
+  propertyAdvisorOffice: propertyAdvisorOfficeImg,
+  clockTowerAerial: clockTowerAerialImg,
+  uploadedSpecimen1: uploadedSpecimen1Img,
+  uploadedSpecimen2: uploadedSpecimen2Img,
+} as const;
+
 export interface BlueprintZone {
   id: string;
   code: string;
@@ -500,7 +516,7 @@ export const MEEZAN_PHOTO_GALLERY: MeezanPhotoItem[] = [
     subtitle: 'Authentic Pakistani commercial real estate storefront, pharmacy & retail arcade on Millat Road',
     category: 'Commercial Frontage',
     locationLabel: 'Hassan Chok 60 Feet Rd · Rafeeq Chouk · Faisalabad',
-    src: '/src/assets/images/faisalabad_millat_road_commercial_plaza_1793278028817.jpg',
+    src: ARCHITECTURAL_IMAGES.millatRoadPlaza,
     dimensionsLabel: 'Commercial Corner · Plus Code F4Q3+MC',
   },
   {
@@ -510,7 +526,7 @@ export const MEEZAN_PHOTO_GALLERY: MeezanPhotoItem[] = [
     subtitle: 'Contemporary Faisalabad residential architecture with CNC boundary gate, travertine & green belt',
     category: 'Residential Estate',
     locationLabel: 'Millat Town D Block · Faisalabad, Pakistan',
-    src: '/src/assets/images/faisalabad_millat_town_1kanal_house_1793278029540.jpg',
+    src: ARCHITECTURAL_IMAGES.millatTownHouse,
     dimensionsLabel: '1 Kanal (50×90 ft) Possession House',
   },
   {
@@ -520,7 +536,7 @@ export const MEEZAN_PHOTO_GALLERY: MeezanPhotoItem[] = [
     subtitle: 'Executive real estate dealer suite with framed Faisalabad FDA Housing Sectors — Millat Town map',
     category: 'Commercial Frontage',
     locationLabel: '308 C Millat Rd HQ · Advisor M. Shahzad',
-    src: '/src/assets/images/faisalabad_property_advisor_office_1793278031427.jpg',
+    src: ARCHITECTURAL_IMAGES.propertyAdvisorOffice,
     dimensionsLabel: 'Open 24 Hours · +92 300 7785625',
   },
   {
@@ -530,7 +546,7 @@ export const MEEZAN_PHOTO_GALLERY: MeezanPhotoItem[] = [
     subtitle: 'Aerial view of Faisalabad’s iconic red-sandstone Clock Tower and radiating commercial bazaars at sunset',
     category: 'Commercial Frontage',
     locationLabel: 'Faisalabad City Center · Commercial Hub',
-    src: '/src/assets/images/faisalabad_clock_tower_aerial_1793278027054.jpg',
+    src: ARCHITECTURAL_IMAGES.clockTowerAerial,
     dimensionsLabel: 'Faisalabad Metropolitan Commercial Core',
   },
   {
@@ -540,7 +556,7 @@ export const MEEZAN_PHOTO_GALLERY: MeezanPhotoItem[] = [
     subtitle: 'Warm cedar siding, coach lantern illumination, and mullioned glass sunroom salon',
     category: 'Uploaded Client Plate',
     locationLabel: 'Millat Town D Block · Estate Reference',
-    src: '/assets/aistudio/unnamed_89661b6e.jpg',
+    src: ARCHITECTURAL_IMAGES.uploadedSpecimen1,
     dimensionsLabel: '10 Marla / 1 Kanal Farmhouse Villa',
   },
   {
@@ -550,7 +566,7 @@ export const MEEZAN_PHOTO_GALLERY: MeezanPhotoItem[] = [
     subtitle: 'Natural split-face stone strata with organic root relief and cascading water feature',
     category: 'Uploaded Client Plate',
     locationLabel: 'Courtyard Sanctuary · 308 C Millat Rd',
-    src: '/assets/aistudio/unnamed__1__f1c37e85.jpg',
+    src: ARCHITECTURAL_IMAGES.uploadedSpecimen2,
     dimensionsLabel: 'Bespoke Landscape & Stonework',
   },
 ];
@@ -584,7 +600,7 @@ export const MONOGRAPH_PROJECTS: MonographProject[] = [
     narrativeLead: 'Anchored at the strategic intersection of Hassan Chok 60 Feet Road, Rafeeq Chouk, and 308 C Millat Road in Millat Town D Block, Faisalabad, MEEZAN REAL ESTATE operates 24 hours a day as the premier commercial property advisory.',
     narrativeBody: 'Directed by Principal Advisor Mr. Muhammad Shahzad (+92 300 7785625), the agency curates high-yield commercial plazas, retail showrooms, and residential estates across Millat Town and North Faisalabad with 100% five-star client verification.',
     figureCaption: 'Fig. 00 — Commercial plaza & Real Estate Advisors storefront on 60 Feet Road / Millat Road, Faisalabad (Plus Code: F4Q3+MC).',
-    imageSvgDataUri: '/src/assets/images/faisalabad_millat_road_commercial_plaza_1793278028817.jpg',
+    imageSvgDataUri: ARCHITECTURAL_IMAGES.millatRoadPlaza,
     elevationSvgDataUri: createDraftedElevationSvg(),
     parameters: [
       { label: 'AGENCY RATING & REVIEWS', value: '5.0 ★ (10 Verified Reviews)', highlight: true },
@@ -664,7 +680,7 @@ export const MONOGRAPH_PROJECTS: MonographProject[] = [
     narrativeLead: 'Situated on a wide carpeted boulevard in Millat Town D Block, Faisalabad, this brand-new 1-Kanal (50×90 ft) designer house exemplifies modern Pakistani residential architecture.',
     narrativeBody: 'Featuring a double-height lobby, imported porcelain tile flooring, teak woodwork, and a spacious three-car porch behind a laser-cut black steel security gate.',
     figureCaption: 'Fig. 01 — Exterior view of the 1-Kanal modern residence in Millat Town D Block, Faisalabad.',
-    imageSvgDataUri: '/src/assets/images/faisalabad_millat_town_1kanal_house_1793278029540.jpg',
+    imageSvgDataUri: ARCHITECTURAL_IMAGES.millatTownHouse,
     elevationSvgDataUri: createDraftedElevationSvg(),
     parameters: [
       { label: 'PLOT SIZE & DIMENSIONS', value: '1 Kanal (50 × 90 ft · 4,500 sq.ft)', highlight: true },
@@ -744,7 +760,7 @@ export const MONOGRAPH_PROJECTS: MonographProject[] = [
     narrativeLead: 'Inside the 308 C Millat Road office, buyers and overseas Pakistani investors inspect framed FDA sector maps of Millat Town, Sargodha Road, and Canal Road housing schemes.',
     narrativeBody: 'Equipped with complete plot verification ledgers, allotment files, and direct transfer coordination, the office welcomes clients 24 hours a day.',
     figureCaption: 'Fig. 02 — Interior of the Meezan Real Estate consultation room featuring the Faisalabad FDA Millat Town sector map.',
-    imageSvgDataUri: '/src/assets/images/faisalabad_property_advisor_office_1793278031427.jpg',
+    imageSvgDataUri: ARCHITECTURAL_IMAGES.propertyAdvisorOffice,
     elevationSvgDataUri: createDraftedElevationSvg(),
     parameters: [
       { label: 'HEADQUARTERS', value: '308 C Millat Rd · Millat Town D Block', highlight: true },
@@ -810,7 +826,7 @@ export const MONOGRAPH_PROJECTS: MonographProject[] = [
     narrativeLead: 'Faisalabad’s urban geometry radiates outward from the iconic 1905 Clock Tower (Ghanta Ghar) through eight bustling wholesale and retail bazaars toward northern expansion corridors like Millat Road.',
     narrativeBody: 'Meezan Real Estate connects textile industrialists, traders, and families from across Faisalabad to high-growth commercial plazas and residential estates in Millat Town.',
     figureCaption: 'Fig. 03 — Aerial view of Faisalabad’s iconic Clock Tower (Ghanta Ghar) and its eight radiating bazaars at sunset.',
-    imageSvgDataUri: '/src/assets/images/faisalabad_clock_tower_aerial_1793278027054.jpg',
+    imageSvgDataUri: ARCHITECTURAL_IMAGES.clockTowerAerial,
     elevationSvgDataUri: createDraftedElevationSvg(),
     parameters: [
       { label: 'METROPOLITAN HUB', value: 'Ghanta Ghar & Eight Bazaars', highlight: true },
@@ -876,7 +892,7 @@ export const MONOGRAPH_PROJECTS: MonographProject[] = [
     narrativeLead: 'Uploaded architectural reference plate showcasing a warm timber-clad evening sunroom pavilion paired with traditional red brick masonry.',
     narrativeBody: 'Full-height mullioned glass doors open the glowing interior living room directly to the landscaped garden.',
     figureCaption: 'Fig. 04 — Client uploaded architectural plate I: Timber & brick sunroom villa at dusk.',
-    imageSvgDataUri: '/assets/aistudio/unnamed_89661b6e.jpg',
+    imageSvgDataUri: ARCHITECTURAL_IMAGES.uploadedSpecimen1,
     elevationSvgDataUri: createDraftedElevationSvg(),
     parameters: [
       { label: 'SPECIMEN PLATE', value: 'Client Uploaded Reference I', highlight: true },
@@ -929,7 +945,7 @@ export const MONOGRAPH_PROJECTS: MonographProject[] = [
     narrativeLead: 'Uploaded architectural reference plate detailing a textured split-face slate wall and organic stone relief veiled by cascading water.',
     narrativeBody: 'Designed for private courtyard cooling and acoustic serenity within high-end residential estates.',
     figureCaption: 'Fig. 05 — Client uploaded architectural plate II: Stacked slate and cascading water wall.',
-    imageSvgDataUri: '/assets/aistudio/unnamed__1__f1c37e85.jpg',
+    imageSvgDataUri: ARCHITECTURAL_IMAGES.uploadedSpecimen2,
     elevationSvgDataUri: createDraftedElevationSvg(),
     parameters: [
       { label: 'SPECIMEN PLATE', value: 'Client Uploaded Reference II', highlight: true },

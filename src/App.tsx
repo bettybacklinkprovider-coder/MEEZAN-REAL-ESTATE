@@ -19,6 +19,7 @@ import {
 import {
   MONOGRAPH_PROJECTS,
   MonographProject,
+  ARCHITECTURAL_IMAGES,
   createHeroArchitecturalSvg,
   createDraftedElevationSvg,
 } from './data/architecturalData';
@@ -87,9 +88,9 @@ export default function App() {
   };
 
   const heroPhotos = {
-    dawn: '/src/assets/images/faisalabad_millat_town_1kanal_house_1793278029540.jpg',
-    noon: '/src/assets/images/faisalabad_clock_tower_aerial_1793278027054.jpg',
-    dusk: '/src/assets/images/faisalabad_millat_road_commercial_plaza_1793278028817.jpg',
+    dawn: ARCHITECTURAL_IMAGES.millatTownHouse,
+    noon: ARCHITECTURAL_IMAGES.clockTowerAerial,
+    dusk: ARCHITECTURAL_IMAGES.millatRoadPlaza,
   };
 
   const heroImageUri =
