@@ -1,0 +1,8 @@
+{
+  "name": "MEEZAN REAL ESTATE",
+  "description": "Dark luxury editorial monograph, interactive architectural floorplan workbench, materiality archive, and private commission studio.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

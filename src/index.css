@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --surface-void: #0E1116;
+    --surface-basalt: #12151B;
+    --surface-elevated: #171B23;
+    --surface-limestone: #F4EFE8;
+    --surface-plate: #FFFFFF;
+    --accent-bronze: #B8925A;
+    --accent-bronze-hover: #D2AE78;
+    --border-dark: rgba(244, 239, 232, 0.08);
+    --border-dark-hover: rgba(184, 146, 90, 0.40);
+    --border-light: rgba(14, 17, 22, 0.08);
+    --border-light-hover: rgba(184, 146, 90, 0.35);
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: #0E1116;
+    color: #F4EFE8;
+  }
+}
+
+.font-serif-editorial {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+.font-sans-body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.font-mono-tabular {
+  font-family: 'JetBrains Mono', monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+.label-caps {
+  font-family: 'Inter', sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 14px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.label-mono {
+  font-family: 'JetBrains Mono', 'Inter', monospace;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.08em;
+  font-variant-numeric: tabular-nums;
+}
+
+.specimen-zoom {
+  transition: transform 700ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.group:hover .specimen-zoom {
+  transform: scale(1.03);
+}
+
+.shadow-ambient-bronze {
+  box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.5), 0 0 30px -10px rgba(184, 146, 90, 0.08);
+}
+
+.shadow-specimen {
+  box-shadow: 0 30px 60px -20px rgba(7, 9, 12, 0.7);
+}
+
